@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c141e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    min-height: 100vh;
+}
+
+.content {
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 80vh;
+    gap: 30px;
+    padding-left: 200px;
+    /*background-color: rgba(255, 255, 255, 0.02);*/
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+            45deg,
+            rgba(12, 20, 30, 0.9) 0%,
+            rgba(18, 32, 47, 0.8) 100%
+        ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.05) 0px,
+            rgba(255, 255, 255, 0.05) 1px,
+            transparent 1px,
+            transparent 20px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.05) 0px,
+            rgba(255, 255, 255, 0.05) 1px,
+            transparent 1px,
+            transparent 20px
+        );
+    background-size: cover, 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/*  Yes this background is gpt generated lol  */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(
+        circle at 50% 50%,
+        rgba(76, 168, 218, 0.15) 0%,
+        transparent 70%
+    );
+    filter: blur(80px);
+    right: -200px;
+    top: -200px;
+    z-index: -1;
+}
+
+.hero-heading {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subheading {
+    color: #9ba2ae;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.hero-cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #4da8da, #2c5282);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.hero-cta:hover {
+    transform: translateY(-2px);
+}
