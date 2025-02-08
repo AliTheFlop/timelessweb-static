@@ -141,6 +141,20 @@ Section global styling (Since most section basics are the same)
     width: 100%;
 }
 
+.section-white {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*
  WhatWeDo Specific Styling
 */
@@ -277,3 +291,46 @@ Projects-specific styling
 }
 
 /* Testimonials */
+
+.testimonials-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 18px;
+    padding: 40px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-card-name {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.testimonial-card-rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card-rating span {
+    color: #ffd700;
+    font-size: 24px;
+}
+
+.testimonial-card-review {
+    color: #9ba2ae;
+    font-size: 20px;
+    line-height: 1.8;
+}
