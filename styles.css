@@ -257,7 +257,7 @@ Projects-specific styling
 
 .projects-card-preview {
     position: absolute;
-    bottom: 30px;
+    top: 30px;
     right: 30px;
     background: linear-gradient(to right, #4da8da, #2c5282);
     padding: 12px 48px;
