@@ -94,19 +94,24 @@ body {
 }
 
 /*
-What We Do
+Section global styling (Since most section basics are the same)
+
+- Section
+- Section container (for max-width)
+- Section head (title and subtitle)
+- Section content (for the main content)
 */
 
-.whatwedo {
+.section {
     display: flex;
     flex-direction: column;
     color: white;
     align-items: center;
     justify-content: center;
-    margin-bottom: 500px;
+    margin-bottom: 70px;
 }
 
-.whatwedo-container {
+.section-container {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -115,25 +120,32 @@ What We Do
     max-width: 80%;
 }
 
-.whatwedo-head {
+.section-head {
     width: 100%;
     padding-top: 50px;
 }
 
-#whatwedo-title {
-    font-size: 42px;
+.section-head-title {
+    font-size: 38px;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-#whatwedo-subtitle {
+.section-head-subtitle {
     max-width: 600px;
     color: #9ba2ae;
     font-size: 18px;
 }
 
-.whatwedo-content {
+.section-content {
     width: 100%;
+}
+
+/*
+ WhatWeDo Specific Styling
+*/
+
+.whatwedo-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 350px;
@@ -146,7 +158,7 @@ What We Do
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid white;
     border-radius: 18px;
-    padding: 10px 30px;
+    padding: 10px 50px;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -185,3 +197,7 @@ What We Do
 .whatwedo-content-item-button:hover {
     transform: translateY(-2px);
 }
+
+/*
+Projects-specific styling
+*/
