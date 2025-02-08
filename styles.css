@@ -132,7 +132,7 @@ Section global styling (Since most section basics are the same)
 }
 
 .section-head-subtitle {
-    max-width: 600px;
+    max-width: 50%;
     color: #9ba2ae;
     font-size: 18px;
 }
@@ -201,3 +201,77 @@ Section global styling (Since most section basics are the same)
 /*
 Projects-specific styling
 */
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.projects-card {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: 20px 0;
+    border-radius: 18px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-card-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.projects-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.projects-card-description {
+    color: #9ba2ae;
+    margin-top: 10px;
+}
+
+.projects-card-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: auto;
+}
+
+.projects-card-tag {
+    background: linear-gradient(to right, #4da8da, #2c5282);
+    padding: 5px 10px;
+    border-radius: 100px;
+    border: 1px solid white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.projects-card-preview {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(to right, #4da8da, #2c5282);
+    padding: 12px 48px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    letter-spacing: 1px;
+}
+
+.projects-card-preview:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
