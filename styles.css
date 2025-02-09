@@ -109,6 +109,8 @@ Section global styling (Since most section basics are the same)
     align-items: center;
     justify-content: center;
     margin-bottom: 70px;
+    padding: 80px 0;
+    margin-bottom: 0;
 }
 
 .section-container {
@@ -155,6 +157,10 @@ Section global styling (Since most section basics are the same)
     align-items: center;
 }
 
+.margintop-20px {
+    margin-top: 20px;
+}
+
 /*
  WhatWeDo Specific Styling
 */
@@ -163,7 +169,7 @@ Section global styling (Since most section basics are the same)
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 350px;
-    gap: 50px;
+    gap: 120px;
     margin-top: 100px;
 }
 
@@ -172,13 +178,19 @@ Section global styling (Since most section basics are the same)
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid white;
     border-radius: 18px;
-    padding: 10px 50px;
+    padding: 10px 30px;
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
     height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatwedo-content-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .whatwedo-content-item-header {
@@ -192,6 +204,7 @@ Section global styling (Since most section basics are the same)
     color: #9ba2ae;
     margin: auto 0;
     font-size: 18px;
+    margin-bottom: 30px;
 }
 
 .whatwedo-content-item-button {
@@ -262,10 +275,9 @@ Projects-specific styling
 
 .projects-card-tag {
     background: linear-gradient(to right, #4da8da, #2c5282);
-    padding: 5px 10px;
+    padding: 6px 14px;
     border-radius: 100px;
-    border: 1px solid white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -273,21 +285,32 @@ Projects-specific styling
     position: absolute;
     top: 30px;
     right: 30px;
-    background: linear-gradient(to right, #4da8da, #2c5282);
+    background: none;
+    /* background: linear-gradient(to right, #4da8da, #2c5282); 
     padding: 12px 48px;
-    border-radius: 8px;
+    border-radius: 8px; */
     border: none;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding-bottom: 4px;
+    border-bottom: 1px solid white;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     letter-spacing: 1px;
 }
 
+.projects-card-preview i {
+    transition: transform 0.2s;
+}
+.projects-card-preview:hover i {
+    transform: translateX(4px);
+}
+
 .projects-card-preview:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    padding-bottom: 3px;
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); */
 }
 
 /* Testimonials */
@@ -333,4 +356,10 @@ Projects-specific styling
     color: #9ba2ae;
     font-size: 20px;
     line-height: 1.8;
+}
+
+.quote-icon {
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 24px;
+    margin: 10px;
 }
