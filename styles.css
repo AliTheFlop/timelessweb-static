@@ -394,3 +394,67 @@ Projects-specific styling
     font-size: 24px;
     margin: 10px;
 }
+
+/* Contact Us */
+
+.contactus-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.full-width-grid-item {
+    grid-column: 1 / -1;
+}
+
+.contactus-form input,
+textarea,
+select {
+    padding: 12px 25px;
+    border: 1px solid transparent;
+    background: none;
+    color: white;
+    border-image: linear-gradient(to right, #4da8da, #2c5282);
+    border-image-slice: 1;
+    font-size: 20px;
+    outline: none;
+}
+
+.contactus-form input::placeholder,
+.contactus-form textarea::placeholder,
+.contactus-form select::placeholder {
+    color: #ffffff;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*  Yes, 4 options to check if a service has been selected...  */
+
+.contactus-form select {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contactus-form select option {
+    background-color: #2c5282;
+    color: white;
+}
+
+.contactus-form select:has(option:checked:not([value=""])) {
+    color: rgba(255, 255, 255, 1);
+}
+
+.contactus-form select option[value=""] {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contactus-form button {
+    padding: 12px 25px;
+    background: linear-gradient(to right, #4da8da, #2c5282);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+}
+
+.form-textarea {
+    height: 250px;
+}
