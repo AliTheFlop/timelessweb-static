@@ -16,8 +16,14 @@
     </head>
     <body>
         <header class="nav">
-            <div>TIMELESS WEB</div>
-            <div><a href="">Home</a><a href="">Contact Us</a></div>
+            <div class="nav-container">
+                <h2>Timeless Web</h2>
+                <div class="nav-links">
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contactus">Contact Us</a>
+                </div>
+            </div>
         </header>
         <main class="content fade-in">
             <!-- Hero section -->
@@ -28,7 +34,7 @@
                     sites look great on any device, are easy to update, and
                     actually bring in business. No fluff, just results.
                 </p>
-                <a class="hero-cta" href="contact.html"
+                <a class="hero-cta" href="#contactus"
                     >Start Your Project
                     <i class="fas fa-arrow-right" style="margin-left: 8px"></i
                 ></a>
@@ -37,7 +43,7 @@
         <section class="section fade-in-delayed">
             <div class="section-container">
                 <div class="section-head">
-                    <h2 class="section-head-title">What We Do</h2>
+                    <h2 class="section-head-title" id="services">What We Do</h2>
                     <p class="section-head-subtitle">
                         We build websites that load fast, stay secure, and are
                         easy to update. Our sites help businesses connect with
@@ -55,9 +61,12 @@
                             We create clean, fast portfolio sites that make your
                             work look amazing and help you land more clients.
                         </p>
-                        <button class="whatwedo-content-item-button">
+                        <a
+                            class="whatwedo-content-item-button"
+                            href="#contactus"
+                        >
                             Start Your Project
-                        </button>
+                        </a>
                     </div>
                     <div class="whatwedo-content-item margin-auto-sides">
                         <i
@@ -73,9 +82,12 @@
                             keep readers coming back and help you grow your
                             audience.
                         </p>
-                        <button class="whatwedo-content-item-button">
+                        <a
+                            class="whatwedo-content-item-button"
+                            href="#contactus"
+                        >
                             Start Your Project
-                        </button>
+                        </a>
                     </div>
                     <div class="whatwedo-content-item">
                         <i class="fas fa-building fa-2x margintop-20px"></i>
@@ -87,9 +99,12 @@
                             business sites that look professional, load fast,
                             and turn visitors into paying customers.
                         </p>
-                        <button class="whatwedo-content-item-button">
+                        <a
+                            class="whatwedo-content-item-button"
+                            href="#contactus"
+                        >
                             Start Your Project
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -97,7 +112,7 @@
         <section class="section">
             <div class="section-container">
                 <div class="section-head marginbottom-60px">
-                    <h2 class="section-head-title">Our Work</h2>
+                    <h2 class="section-head-title" id="portfolio">Our Work</h2>
                     <p class="section-head-subtitle">
                         Here's what we've built. These sites show what we can do
                         and how we've helped real businesses get results online.
@@ -213,7 +228,7 @@
                     </p>
                 </div>
                 <div class="section-content">
-                    <form class="contactus-form" action="">
+                    <form class="contactus-form" id="contactus" action="">
                         <input
                             type="text"
                             class="input"
