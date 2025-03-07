@@ -17,7 +17,7 @@
     <body>
         <header class="nav">
             <div class="nav-container">
-                <h2>Timeless Web</h2>
+                <a href="#" class="nav-container-heading">Timeless Web</a>
                 <div class="nav-links">
                     <a href="#services">Services</a>
                     <a href="#portfolio">Portfolio</a>
@@ -228,7 +228,12 @@
                     </p>
                 </div>
                 <div class="section-content">
-                    <form class="contactus-form" id="contactus" action="">
+                    <form
+                        class="contactus-form"
+                        id="contactus"
+                        action="https://submit-form.com/k2BmGYeHC"
+                        onsubmit="return handleSubmit(event)"
+                    >
                         <input
                             type="text"
                             class="input"
@@ -272,6 +277,11 @@
                             class="full-width-grid-item form-textarea"
                             placeholder="Describe your project"
                         ></textarea>
+                        <input
+                            type="hidden"
+                            name="_success"
+                            value="Thank you for your submission!"
+                        />
                         <button class="full-width-grid-item" type="submit">
                             Start Your Project
                         </button>

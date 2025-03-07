@@ -133,10 +133,11 @@ Section global styling (Since most section basics are the same)
     width: 80%;
 }
 
-.nav-container h2 {
+.nav-container-heading {
     color: white;
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .nav-links {
